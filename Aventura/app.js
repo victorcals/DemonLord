@@ -2,8 +2,8 @@ new Vue({
     el: '#app',
     data: {
         start: false,
-        playerLife: 0,
-        monsterLife: 22,
+        playerLife: 100,
+        monsterLife: 100,
         logs: [
 
         ]

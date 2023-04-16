@@ -29,12 +29,32 @@
      justify-content: center;
      align-items: center;
 
+
  }
 
  .score h1 {
      font-weight: 300;
      font-size: 1.6rem;
+     z-index: -1;
+     position: relative;
  }
+
+ .adventurer {
+     background-image: url('https://i.pinimg.com/originals/14/a3/b3/14a3b39eae58bb548be2bdbaaa528a93.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     z-index: 1;
+ }
+
+ .demonlord {
+     background-image: url('https://i.pinimg.com/originals/94/fa/33/94fa33a40f52cc81f471826fd7204fd0.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     z-index: 1;
+ }
+
 
  .life-bar {
      width: 80%;
@@ -144,4 +164,21 @@
  .playerheal {
      background-color: rgb(6, 97, 6);
      color: aliceblue;
+ }
+
+
+ #background-image {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     /* z-index negativo coloca a imagem atrás */
+ }
+
+ #content {
+     position: relative;
+     z-index: 1;
+     /* z-index positivo coloca a div na frente */
  }
